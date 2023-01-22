@@ -183,31 +183,28 @@
 
   .reg-company-btn {
     display: inline;
-    width: 250px;
-    padding: 2% 0%;
   }
 
   .topic-intro {
     margin-top: 100px;
   }
 
-  .topic-main {
-    font-size: 2rem;
-    margin-bottom: 50px;
-  }
-
   .top-btns {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .login-body {
     display: block;
-    border-radius: 0px;
-    margin-left: 0;
-    width: 150px;
-    margin-bottom: 10px;
+    text-align: center;
+    padding-inline: 20px;
+    border: 0;
+  }
+
+  .topic-main {
+    font-size: 2rem;
+    margin-bottom: 50px;
   }
 
   /* GRID */

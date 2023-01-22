@@ -20,16 +20,16 @@ export default function Home() {
                   <Button
                     variant="outline-light"
                     href="#"
-                    className="login login-body"
-                  >
-                    Login
-                  </Button>
-                  <Button
-                    variant="outline-light"
-                    href="#"
                     className="header-btn register reg-company-btn"
                   >
                     Register Your Company
+                  </Button>{" "}
+                  <Button
+                    variant="outline-light"
+                    href="#"
+                    className="header-btn login reg-company-btn login-body"
+                  >
+                    <i class="fa-sharp fa-solid fa-right-to-bracket"></i>
                   </Button>
                 </div>
               </div>

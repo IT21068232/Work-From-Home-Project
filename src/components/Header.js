@@ -13,7 +13,7 @@ function Header() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="justify-content-center pe-3 flex-grow-1 nav-items">
-              <Nav.Link href="#home" className="nav-links">
+              <Nav.Link href="/home" className="nav-links">
                 Home
               </Nav.Link>
               <Nav.Link href="#home" className="nav-links">
