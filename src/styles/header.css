@@ -136,6 +136,7 @@ body {
 
   .header-container {
     padding-inline: 0%;
+    padding-top: 2%;
   }
 
   .header-btn {
@@ -150,10 +151,9 @@ body {
     background: rgb(219, 216, 248);
     background: linear-gradient(
       100deg,
-      rgba(219, 216, 248, 0.617) 40%,
-      rgba(241, 207, 218, 0.363) 81%
+      rgba(219, 216, 248, 0.187) 40%,
+      rgba(228, 211, 211, 0.089) 81%
     );
-    box-shadow: 0px 20px 50px rgb(198, 193, 244);
   }
 
   .nav-links {
