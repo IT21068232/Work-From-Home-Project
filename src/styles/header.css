@@ -41,6 +41,10 @@ body {
   overflow-x: hidden;
 }
 
+.logo-header {
+  height: 45px;
+}
+
 .header-container {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -125,8 +129,13 @@ body {
 }
 
 @media all and (max-width: 992px) {
+  .logo-header {
+    padding-left: 15px;
+    height: 40px;
+  }
+
   .header-container {
-    padding: 1%;
+    padding-inline: 0%;
   }
 
   .header-btn {
@@ -135,12 +144,21 @@ body {
 
   .nav-items {
     padding-left: 20px;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+    padding-bottom: 50px;
+    padding-top: 15px;
+    background: rgb(219, 216, 248);
+    background: linear-gradient(
+      100deg,
+      rgba(219, 216, 248, 0.617) 40%,
+      rgba(241, 207, 218, 0.363) 81%
+    );
+    box-shadow: 0px 20px 50px rgb(198, 193, 244);
   }
 
   .nav-links {
-    margin: 1.5% 0%;
-    font-weight: 400;
+    margin: 2% 0%;
+    font-weight: 500;
     font-size: 0.9rem;
     position: relative;
     padding-left: 10px;
@@ -154,5 +172,22 @@ body {
     width: 100%;
     height: 1px;
     top: 100%;
+  }
+
+  .toggle-btn {
+    border-color: var(--pink);
+    font-size: 1.5rem;
+  }
+
+  .toggle-btn:focus {
+    box-shadow: none;
+  }
+
+  .toggle-btn .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(251, 36, 106' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .toggle-btn .navbar-toggler {
+    border-color: var(--pink);
   }
 }

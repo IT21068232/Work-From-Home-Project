@@ -134,7 +134,6 @@
 
 @media all and (max-width: 992px) {
   .main-top {
-    /* background-position: -200px 70px; */
     background-size: cover;
     background-position: center 70px;
   }

@@ -3,16 +3,26 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import "../styles/header.css";
+import logo from "../images/logo.png";
 
 function Header() {
   return (
     <div className="nav-bar">
       <Navbar expand="lg">
         <Container className="header-container">
-          <Navbar.Brand href="#home">Logo = WORKSPACE</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Brand href="#home">
+            <img
+              alt="Logo"
+              src={logo}
+              className="d-inline-block align-top logo-header"
+            />
+          </Navbar.Brand>
+          <Navbar.Toggle
+            aria-controls="basic-navbar-nav"
+            className="border-0 toggle-btn"
+          />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="justify-content-center pe-3 flex-grow-1 nav-items">
+            <Nav className="justify-content-center flex-grow-1 nav-items">
               <Nav.Link href="/home" className="nav-links">
                 Home
               </Nav.Link>
