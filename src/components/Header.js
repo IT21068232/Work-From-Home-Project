@@ -1,0 +1,47 @@
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Button from "react-bootstrap/Button";
+import "../styles/header.css";
+
+function Header() {
+  return (
+    <div className="nav-bar">
+      <Navbar expand="lg">
+        <Container className="header-container">
+          <Navbar.Brand href="#home">Logo = WORKSPACE</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="justify-content-center pe-3 flex-grow-1 nav-items">
+              <Nav.Link href="#home" className="nav-links">
+                Home
+              </Nav.Link>
+              <Nav.Link href="#home" className="nav-links">
+                Contact
+              </Nav.Link>
+              <Nav.Link href="#link" className="nav-links">
+                About
+              </Nav.Link>
+            </Nav>
+            <Button
+              variant="outline-light"
+              href="#"
+              className="header-btn register"
+            >
+              Register
+            </Button>
+            <Button
+              variant="outline-light"
+              href="#"
+              className="header-btn ms-3 login"
+            >
+              Login
+            </Button>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </div>
+  );
+}
+
+export default Header;

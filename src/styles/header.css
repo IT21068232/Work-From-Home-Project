@@ -1,0 +1,145 @@
+:root {
+  --blue: #28395a;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #fb246a;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --light-blue: #014b85;
+  --dark-blue: #252b60;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  --font-family-para: "Comic Neue", Helvetica, Arial, sans-serif;
+  --font-family-solid: "Be Vietnam Pro", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header-container {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.nav-links {
+  margin-right: 20px;
+  color: var(--dark-blue);
+  font-weight: 500;
+}
+
+.header-btn {
+  border: 0;
+  font-family: "Muli", sans-serif;
+  padding: 1.5% 4%;
+  border-radius: 0px;
+}
+
+.register {
+  background-color: var(--pink);
+  position: relative;
+  transition: all 550ms ease-in-out;
+  z-index: 1;
+}
+
+.register::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  border: 1px solid var(--pink);
+  z-index: -1;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 150ms ease-in-out;
+}
+
+.register:hover::after {
+  color: var(--pink);
+  transform: scaleX(1);
+}
+
+.register:hover {
+  color: var(--pink);
+  transition: all 550ms ease-in-out;
+}
+
+.login {
+  background-color: var(--white);
+  color: var(--pink);
+  border: 1px solid var(--pink);
+  position: relative;
+  transition: all 550ms ease-in-out;
+  z-index: 1;
+}
+
+.login::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--pink);
+  z-index: -1;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 150ms ease-in-out;
+}
+
+.login:hover::after {
+  transform: scaleX(1);
+}
+
+.login:hover {
+  color: var(--white);
+  transition: all 550ms ease-in-out;
+}
+
+@media all and (max-width: 992px) {
+  .header-container {
+    padding: 1%;
+  }
+
+  .header-btn {
+    display: none;
+  }
+
+  .nav-items {
+    padding-left: 20px;
+    margin-top: 2rem;
+  }
+
+  .nav-links {
+    margin: 1% 0%;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+}
