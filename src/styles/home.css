@@ -106,6 +106,10 @@
   cursor: pointer;
 }
 
+.feature span {
+  color: var(--pink);
+}
+
 .feature:hover {
   box-shadow: 0px 0px 20px rgba(89, 69, 78, 0.222);
 }
@@ -117,7 +121,7 @@
 }
 
 .description {
-  color: var(--pink);
+  color: rgb(86, 86, 86);
   font-size: 0.9rem;
   font-weight: 400;
   padding: 0px 15px;
