@@ -1,8 +1,17 @@
 import React from "react";
 import "../styles/home.css";
 import { Button } from "react-bootstrap";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Tooltip from "react-bootstrap/Tooltip";
 
 export default function Home() {
+  //TOOLTIP
+  const renderTooltip = (props) => (
+    <Tooltip id="button-tooltip" {...props}>
+      Login
+    </Tooltip>
+  );
+
   return (
     <div>
       <div className="main-top">
@@ -23,14 +32,20 @@ export default function Home() {
                     className="header-btn register reg-company-btn"
                   >
                     Register Your Company
-                  </Button>{" "}
-                  <Button
-                    variant="outline-light"
-                    href="#"
-                    className="header-btn login reg-company-btn login-body"
-                  >
-                    <i class="fa-sharp fa-solid fa-right-to-bracket"></i>
                   </Button>
+                  <OverlayTrigger
+                    placement="top"
+                    delay={{ show: 250, hide: 400 }}
+                    overlay={renderTooltip}
+                  >
+                    <Button
+                      variant="outline-light"
+                      href="#"
+                      className="header-btn login reg-company-btn login-body"
+                    >
+                      <i class="fa-sharp fa-solid fa-right-to-bracket"></i>
+                    </Button>
+                  </OverlayTrigger>
                 </div>
               </div>
             </div>
