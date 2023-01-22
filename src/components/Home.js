@@ -16,7 +16,14 @@ export default function Home() {
                 <p className="flex-wrap  lead-second">
                   Register today and Manage your work at home
                 </p>
-                <div>
+                <div className="top-btns">
+                  <Button
+                    variant="outline-light"
+                    href="#"
+                    className="login login-body"
+                  >
+                    Login
+                  </Button>
                   <Button
                     variant="outline-light"
                     href="#"

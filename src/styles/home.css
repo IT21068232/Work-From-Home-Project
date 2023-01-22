@@ -71,6 +71,10 @@
   margin-bottom: 100px;
 }
 
+.login-body {
+  display: none;
+}
+
 /* GRID */
 
 .feature-grid {
@@ -164,13 +168,13 @@
   .lead {
     font-size: clamp(2rem, 4vw + 1rem, 3rem);
     display: inline-block;
-    margin-top: 8%;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
   }
 
   .lead-second {
     font-size: 0.9rem;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
   }
 
   .right-main {
@@ -179,6 +183,8 @@
 
   .reg-company-btn {
     display: inline;
+    width: 250px;
+    padding: 2% 0%;
   }
 
   .topic-intro {
@@ -188,6 +194,20 @@
   .topic-main {
     font-size: 2rem;
     margin-bottom: 50px;
+  }
+
+  .top-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .login-body {
+    display: block;
+    border-radius: 0px;
+    margin-left: 0;
+    width: 150px;
+    margin-bottom: 10px;
   }
 
   /* GRID */
