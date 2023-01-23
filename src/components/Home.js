@@ -1,8 +1,6 @@
 import React from "react";
 import "../styles/home.css";
-import { Button } from "react-bootstrap";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import Tooltip from "react-bootstrap/Tooltip";
+import { Button, OverlayTrigger, Tooltip } from "react-bootstrap";
 import Categories from "../json/categories.json";
 
 export default function Home() {
@@ -63,12 +61,32 @@ export default function Home() {
         {Categories.map((category) => {
           return (
             <div className="feature" key={category.id}>
-              <span class="material-symbols-outlined">{category.icon}</span>
+              <span className="material-symbols-outlined">{category.icon}</span>
               <p className="categories">{category.category}</p>
               <p className="description">{category.description}</p>
             </div>
           );
         })}
+      </div>
+
+      <div className="browse">
+        <div className="d-flex flex-column bd-highlight mb-3 container">
+          <div className="p-2 bd-highlight browse-intro topic">
+            FEATURED TOUR PACKAGES
+          </div>
+          <div className="bd-highlight browse-main topic">
+            Make a Difference with your Remote Workspace!
+          </div>
+          <div className="p-2 bd-highlight text-center browse-btn-div">
+            <Button
+              variant="outline-light"
+              href="#"
+              className="header-btn register browse-btn"
+            >
+              BROWSE ALL CATEGORIES
+            </Button>
+          </div>
+        </div>
       </div>
     </div>
   );
