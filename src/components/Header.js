@@ -10,7 +10,7 @@ function Header() {
     <div className="nav-bar">
       <Navbar expand="lg">
         <Container className="header-container">
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/home">
             <img
               alt="Logo"
               src={logo}

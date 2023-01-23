@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "icon": "monitoring",
+    "category": "Track",
+    "description": "Track the performance of your company"
+  },
+
+  {
+    "id": "2",
+    "icon": "settings",
+    "category": "Management",
+    "description": "Manage your projects and teams easily"
+  },
+
+  {
+    "id": "3",
+    "icon": "summarize",
+    "category": "Reports",
+    "description": "Generate reports of your company"
+  },
+
+  {
+    "id": "4",
+    "icon": "list",
+    "category": "To Do",
+    "description": "Create to do lists across your company"
+  },
+
+  {
+    "id": "5",
+    "icon": "chat_bubble",
+    "category": "Chat",
+    "description": "Increase interactivity within the company"
+  },
+
+  {
+    "id": "6",
+    "icon": "groups",
+    "category": "Schedule",
+    "description": "Schedule meetings and events facility"
+  },
+
+  {
+    "id": "7",
+    "icon": "folder_open",
+    "category": "Routing",
+    "description": "Easily route your documents across your company"
+  },
+
+  {
+    "id": "8",
+    "icon": "campaign",
+    "category": "Announcements",
+    "description": "  Get notified with the latest anouncements"
+  }
+]
