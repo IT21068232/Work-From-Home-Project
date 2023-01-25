@@ -1,0 +1,45 @@
+import React from "react";
+import "../styles/footer.css";
+
+export default function Footer() {
+  return (
+    <div className="fixed-bottom footer-main">
+      <div className="footer container">
+        <div className="foot-col">
+          <div className="foot-topic">ABOUT US</div>
+          <div className="foot-content">
+            The best leading Work From Home Management System.
+          </div>
+        </div>
+        <div className="foot-col">
+          <div className="foot-topic">CONTACT INFO</div>
+          <div className="foot-content">
+            <p>Address: 284 Vauxhall St, Colombo 00300</p>
+            <p>Phone: +011 779 456</p>
+            <p>Email: info@workspace.com</p>
+          </div>
+        </div>
+        <div className="foot-col">
+          <div className="foot-topic">QUICK LINKS</div>
+          <div className="foot-content">
+            <p>Contact Us</p>
+            <p>Support</p>
+            <p>View Profile</p>
+            <p>Testimonial</p>
+          </div>
+        </div>
+        <div className="foot-col">
+          <div className="foot-topic">NEWSLETTER</div>
+          <div className="foot-content">
+            <p>How to start an online business from home?</p>
+          </div>
+        </div>
+        <div className="foot-col">
+          <div className="foot-topic">
+            <form></form>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -211,8 +211,27 @@
 .carousel-indicators [data-bs-target] {
   width: 10px !important;
   height: 10px !important;
-  border: 1px solid transparent !important;
+  border: 2px solid transparent !important;
   border-radius: 10px;
+}
+
+/* Lower content */
+
+.lower-content-bg {
+  background-image: url(../images/how-applybg.png);
+  background-repeat: no-repeat;
+}
+
+.topic-lower-main {
+  color: var(--white);
+}
+
+.lower-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-content: center;
+  margin-bottom: 10%;
 }
 
 @media all and (max-width: 992px) {

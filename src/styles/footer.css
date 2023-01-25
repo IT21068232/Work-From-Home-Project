@@ -1,0 +1,23 @@
+.footer-main {
+  background-color: #010b1d;
+}
+
+.footer {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-content: center;
+}
+
+.foot-topic {
+  color: var(--white);
+  font-family: var(--font-family-solid);
+  font-size: 1.3rem;
+}
+
+.foot-content {
+  color: #868c98;
+  font-family: var(--font-family-san-serif);
+  font-size: 1rem;
+  font-weight: 400;
+}
