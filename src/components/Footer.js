@@ -3,7 +3,7 @@ import "../styles/footer.css";
 
 export default function Footer() {
   return (
-    <div className="fixed-bottom footer-main">
+    <div className="footer-main">
       <div className="footer container">
         <div className="foot-col">
           <div className="foot-topic">ABOUT US</div>
@@ -35,8 +35,18 @@ export default function Footer() {
           </div>
         </div>
         <div className="foot-col">
-          <div className="foot-topic">
-            <form></form>
+          <div className="foot-topic form">
+            <form>
+              <input
+                type="text"
+                className="footer-input"
+                required="true"
+                placeholder="Email Address"
+              />
+              <button className="footer-submit">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
           </div>
         </div>
       </div>
