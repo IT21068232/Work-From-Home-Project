@@ -10,7 +10,7 @@ function Header() {
     <div className="nav-bar">
       <Navbar expand="lg">
         <Container className="header-container">
-          <Navbar.Brand href="/home">
+          <Navbar.Brand href="/">
             <img
               alt="Logo"
               src={logo}
@@ -23,7 +23,7 @@ function Header() {
           />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="justify-content-center flex-grow-1 nav-items">
-              <Nav.Link href="/home" className="nav-links">
+              <Nav.Link href="/" className="nav-links">
                 Home
               </Nav.Link>
               <Nav.Link href="#home" className="nav-links">

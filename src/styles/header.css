@@ -82,7 +82,7 @@ body {
 
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 150ms ease-in-out;
+  transition: transform 250ms ease-in-out;
 }
 
 .register:hover::after {
@@ -116,7 +116,7 @@ body {
 
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 150ms ease-in-out;
+  transition: transform 250ms ease-in-out;
 }
 
 .login:hover::after {

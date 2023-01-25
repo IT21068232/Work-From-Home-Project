@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/home.css";
-import { Button, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { Button, OverlayTrigger, Tooltip, Carousel } from "react-bootstrap";
 import Categories from "../json/categories.json";
+import caro1 from "../images/caro1.png";
+import caro2 from "../images/caro2.png";
+import caro3 from "../images/caro3.png";
 
 export default function Home() {
   //TOOLTIP
@@ -10,6 +13,13 @@ export default function Home() {
       Login
     </Tooltip>
   );
+
+  // CAROUSEL
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
 
   return (
     <div>
@@ -87,6 +97,45 @@ export default function Home() {
             </Button>
           </div>
         </div>
+      </div>
+
+      {/* CAROUSEL */}
+      <div className="container">
+        <Carousel activeIndex={index} onSelect={handleSelect} variant="dark">
+          <Carousel.Item className="caro-item">
+            <div className="testi-item">
+              <img src={caro1} alt="testimonial1" />
+              <h5>Peter Lawson</h5>
+              <p className="profession">CEO</p>
+              <p className="testi-desc">
+                "Amazing tool and top class support. Workspace helped me above
+                and beyond. Genuine service for you to enjoy and move forward!"
+              </p>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item className="caro-item">
+            <div className="testi-item">
+              <img src={caro2} alt="testimonial2" />
+              <h5>Amy Amrou</h5>
+              <p className="profession">Manager</p>
+              <p className="testi-desc">
+                "I'm a big fan of Workspace because it makes it so much easier
+                for me to catch up on my work I may have missed."
+              </p>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item className="caro-item">
+            <div className="testi-item">
+              <img src={caro3} alt="testimonial3" />
+              <h5>Jay Doe</h5>
+              <p className="profession">Manager</p>
+              <p className="testi-desc">
+                " The Workspace really got me started on actually building
+                something for my business."
+              </p>
+            </div>
+          </Carousel.Item>
+        </Carousel>
       </div>
     </div>
   );
