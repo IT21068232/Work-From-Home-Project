@@ -8,7 +8,8 @@ export default function Footer() {
         <div className="foot-col">
           <div className="foot-topic">ABOUT US</div>
           <div className="foot-content">
-            The best leading Work From Home Management System.
+            The best leading Work From Home Management System. Manage your work
+            from anywhere around the world.
           </div>
         </div>
         <div className="foot-col">
@@ -33,8 +34,6 @@ export default function Footer() {
           <div className="foot-content">
             <p>How to start an online business from home?</p>
           </div>
-        </div>
-        <div className="foot-col">
           <div className="foot-topic form">
             <form>
               <input

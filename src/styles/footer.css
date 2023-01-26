@@ -1,5 +1,6 @@
 .footer-main {
   background-color: #010b1d;
+  padding: 100px 0%;
 }
 
 .footer {
@@ -9,10 +10,15 @@
   justify-content: center;
 }
 
+.foot-col {
+  margin-bottom: 20px;
+}
+
 .foot-topic {
   color: var(--white);
   font-family: var(--font-family-solid);
   font-size: 1.3rem;
+  margin-bottom: 30px;
 }
 
 .foot-content {
@@ -20,6 +26,11 @@
   font-family: var(--font-family-san-serif);
   font-size: 1rem;
   font-weight: 400;
+}
+
+.form {
+  margin-top: 35px;
+  width: 100%;
 }
 
 .form form {
@@ -45,5 +56,11 @@
 }
 
 .footer-submit i {
-  width: 45px;
+  width: 40px;
+}
+
+@media all and (max-width: 554px) {
+  .form input {
+    width: 100%;
+  }
 }
