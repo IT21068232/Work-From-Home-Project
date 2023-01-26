@@ -100,7 +100,7 @@ export default function Home() {
       </div>
 
       {/* CAROUSEL */}
-      <div className="container">
+      <div className="container carousel">
         <Carousel activeIndex={index} onSelect={handleSelect} variant="dark">
           <Carousel.Item className="caro-item">
             <div className="testi-item">
@@ -130,7 +130,7 @@ export default function Home() {
               <h5>Jay Doe</h5>
               <p className="profession">Manager</p>
               <p className="testi-desc">
-                " The Workspace really got me started on actually building
+                "The Workspace really got me started on actually building
                 something for my business."
               </p>
             </div>

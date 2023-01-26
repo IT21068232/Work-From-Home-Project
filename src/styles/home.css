@@ -168,6 +168,11 @@
 }
 
 /* CAROUSEL */
+.carousel {
+  height: 580px;
+  margin-bottom: 70px;
+}
+
 .caro-item {
   margin-top: 5%;
   margin-bottom: 5%;
