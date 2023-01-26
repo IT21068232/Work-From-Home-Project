@@ -10,7 +10,7 @@ function Header() {
   const [isScrolled, setScrolled] = useState(false);
 
   const changeNavBar = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 50) {
       setScrolled(true);
     } else {
       setScrolled(false);
