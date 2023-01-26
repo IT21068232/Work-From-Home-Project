@@ -17,23 +17,42 @@ export default function Footer() {
           <div className="foot-topic">CONTACT INFO</div>
           <div className="foot-content">
             <p>Address: 284 Vauxhall St, Colombo 00300</p>
-            <p>Phone: +011 779 4556</p>
-            <p>Email: info@workspace.com</p>
+
+            <p>
+              Phone: <a href="#">+011 779 4556</a>
+            </p>
+
+            <p>
+              Email: <a href="#">info@workspace.com </a>
+            </p>
           </div>
         </div>
         <div className="foot-col">
           <div className="foot-topic">QUICK LINKS</div>
           <div className="foot-content">
-            <p>Contact Us</p>
-            <p>Support</p>
-            <p>View Profile</p>
-            <p>Testimonial</p>
+            <p>
+              <a href="#">Contact Us</a>
+            </p>
+
+            <p>
+              <a href="#">Support</a>
+            </p>
+
+            <p>
+              <a href="#">View Profile</a>
+            </p>
+
+            <p>
+              <a href="#">Testimonial</a>
+            </p>
           </div>
         </div>
         <div className="foot-col">
           <div className="foot-topic">NEWSLETTER</div>
           <div className="foot-content">
-            <p>How to start an online business from home?</p>
+            <p>
+              <a href="#">How to start an online business from home?</a>
+            </p>
           </div>
           <div className="foot-topic form">
             <form>
@@ -52,7 +71,9 @@ export default function Footer() {
       </div>
       <div className="container footer footer-lower">
         <div className="foot-lower">
-          <img src={logo} className="img-fluid footer-logo" alt="Logo" />
+          <a href="/">
+            <img src={logo} className="img-fluid footer-logo" alt="Logo" />
+          </a>
         </div>
         <div className="foot-lower-icons">
           <a href="#">
