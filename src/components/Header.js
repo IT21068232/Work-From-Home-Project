@@ -9,7 +9,7 @@ import logo from "../images/logo.png";
 function Header() {
   const [isScrolled, setScrolled] = useState(false);
 
-  const changeNavBar = () => {
+  const changeOnScroll = () => {
     if (window.scrollY >= 50) {
       setScrolled(true);
     } else {
@@ -17,7 +17,7 @@ function Header() {
     }
   };
 
-  window.addEventListener("scroll", changeNavBar);
+  window.addEventListener("scroll", changeOnScroll);
 
   return (
     <div className={isScrolled ? "sticky" : "nav-bar"}>
