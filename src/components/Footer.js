@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="container footer">
+      <div className="container footer footer-lower">
         <div className="foot-lower">
           <img src={logo} className="img-fluid footer-logo" alt="Logo" />
         </div>
