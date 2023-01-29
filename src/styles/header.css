@@ -53,7 +53,14 @@ body {
 .nav-links {
   margin-right: 20px;
   color: var(--dark-blue);
+  transition: transform 150ms ease-in-out;
   font-weight: 500;
+}
+
+.nav-links:hover {
+  color: var(--pink);
+  transition: all 150ms ease-in-out;
+  transform: scale(1.1);
 }
 
 .header-btn {
@@ -160,6 +167,10 @@ body {
     padding-left: 10px;
   }
 
+  .nav-links:hover {
+    transform: scale(1);
+  }
+
   .nav-links::after {
     content: "";
     position: absolute;
@@ -201,7 +212,7 @@ body {
   position: fixed;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
   z-index: 10;
   box-shadow: 1px 5px 10px rgba(162, 162, 162, 0.4);
   transition: all 200ms ease-in-out;

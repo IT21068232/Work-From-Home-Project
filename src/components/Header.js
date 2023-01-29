@@ -48,14 +48,14 @@ function Header() {
             </Nav>
             <Button
               variant="outline-light"
-              href="#"
+              href="/register"
               className="header-btn register"
             >
               Register
             </Button>
             <Button
               variant="outline-light"
-              href="#"
+              href="/login"
               className="header-btn ms-3 login"
             >
               Login
